@@ -1,0 +1,327 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Worldnod - 网络中继服务配置手册</title><meta name="description" content="Worldnod 提供稳定的网络中继节点订阅服务。本页面详细说明套餐选择、设备配置及常见故障排查方法。"><meta name="keywords" content="Worldnod,网络中继,节点订阅,IPLC专线,路由配置,代理客户端"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-4ff97c628d.lanzhouai.cn/"><meta property="og:type" content="website"><meta property="og:title" content="Worldnod - 网络中继服务配置手册"><meta property="og:description" content="Worldnod 提供稳定的网络中继节点订阅服务。本页面详细说明套餐选择、设备配置及常见故障排查方法。"><meta property="og:url" content="https://p-4ff97c628d.lanzhouai.cn/"><meta property="og:site_name" content="Worldnod"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-4ff97c628d.lanzhouai.cn/", "name": "Worldnod - 网络中继服务配置手册", "description": "Worldnod 提供稳定的网络中继节点订阅服务。本页面详细说明套餐选择、设备配置及常见故障排查方法。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="03cfcf15d6e29f224216ce32:2b1b447c2adfd57177ac5a1b425f054d1ca07c6b3c863a3e97be9987b86d7b30:e8b717600420b4a41153"></head><body id="top"><style>
+:root {--bg-dark: #2B2018;--bg-deep: #1E1612;--mint: #A8E6CF;--mint-dim: #7FCFB4;--ivory: #F5F0E8;--text-muted: #9C938A;--border-subtle: rgba(168, 230, 207, 0.15);--border-hover: rgba(168, 230, 207, 0.4)}
+
+* {box-sizing: border-box;margin: 0;padding: 0}
+
+body {background-color: var(--bg-dark);color: var(--ivory);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;line-height: 1.7;-webkit-font-smoothing: antialiased}
+
+.nav-bar {border-bottom: 1px solid var(--border-subtle);padding: 1rem 2rem;display: flex;justify-content: space-between;align-items: center;position: sticky;top: 0;background: rgba(43, 32, 24, 0.95);backdrop-filter: blur(8px);z-index: 100}
+
+.brand-mark {color: var(--mint);font-weight: 600;font-size: 0.95rem;letter-spacing: 0.05em}
+
+.nav-links {display: flex;gap: 2rem}
+
+.nav-links a {color: var(--text-muted);text-decoration: none;font-size: 0.85rem;transition: color 0.2s ease}
+
+.nav-links a:hover {color: var(--mint)}
+
+.hero {min-height: 90vh;padding: 4rem 2rem;display: flex;align-items: flex-start}
+
+.hero-inner {max-width: 640px;margin-left: 5%}
+
+.hero-meta {color: var(--mint-dim);font-size: 0.8rem;letter-spacing: 0.15em;text-transform: uppercase;margin-bottom: 2rem;display: block}
+
+h1 {font-size: 3.5rem;font-weight: 300;line-height: 1.15;margin-bottom: 1.5rem;color: var(--ivory)}
+
+.hero-subtitle {font-size: 1.05rem;color: var(--text-muted);max-width: 480px;margin-bottom: 2.5rem}
+
+.hero-status {display: flex;gap: 2rem;font-size: 0.8rem;color: var(--text-muted)}
+
+.status-item span {color: var(--mint);display: block;font-size: 1.4rem;font-weight: 300;margin-bottom: 0.2rem}
+
+section {padding: 5rem 2rem;border-top: 1px solid var(--border-subtle)}
+
+.section-inner {max-width: 960px;margin: 0 auto}
+
+h2 {font-size: 1.5rem;font-weight: 400;color: var(--mint);margin-bottom: 2.5rem;letter-spacing: 0.02em}
+
+h3 {font-size: 1.1rem;font-weight: 500;color: var(--ivory);margin-bottom: 1rem}
+
+.intro-text {font-size: 1.1rem;color: var(--text-muted);max-width: 600px;margin-bottom: 3rem}
+
+.spec-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));gap: 2.5rem;margin-bottom: 3rem}
+
+.spec-item p {color: var(--text-muted);font-size: 0.9rem}
+
+.spec-item strong {color: var(--ivory);display: block;font-weight: 500;margin-bottom: 0.3rem}
+
+.plans-container {display: flex;flex-direction: column;gap: 2rem}
+
+.plan-card {background: var(--bg-deep);padding: 2.5rem;border-radius: 2px;transition: border 0.3s ease;border-left: 2px solid transparent}
+
+.plan-card.featured {border-left: 2px solid var(--mint)}
+
+.plan-header {display: flex;justify-content: space-between;align-items: flex-start;margin-bottom: 1.5rem;flex-wrap: wrap;gap: 1rem}
+
+.plan-name {font-size: 1.2rem;color: var(--mint);font-weight: 500}
+
+.plan-price {font-size: 1.6rem;color: var(--ivory);font-weight: 300}
+
+.plan-annual {font-size: 0.85rem;color: var(--text-muted);margin-top: 0.3rem}
+
+.plan-features {list-style: none;margin-top: 1.5rem}
+
+.plan-features li {padding: 0.6rem 0;color: var(--text-muted);font-size: 0.95rem;border-bottom: 1px solid var(--border-subtle)}
+
+.plan-features li:last-child {border-bottom: none}
+
+.client-list {display: flex;flex-direction: column;gap: 0}
+
+.client-item {padding: 1.5rem 0;border-bottom: 1px solid var(--border-subtle);display: grid;grid-template-columns: 1fr 2fr;gap: 2rem;align-items: start}
+
+.client-item:last-child {border-bottom: none}
+
+.client-platform {color: var(--mint);font-weight: 500;font-size: 0.95rem}
+
+.client-desc {color: var(--text-muted);font-size: 0.9rem}
+
+.client-desc strong {color: var(--ivory);display: block;margin-bottom: 0.3rem}
+
+.faq-group {display: flex;flex-direction: column;gap: 1rem}
+
+details {background: var(--bg-deep);padding: 1.5rem;cursor: pointer}
+
+summary {color: var(--ivory);font-weight: 400;font-size: 1rem;list-style: none;display: flex;justify-content: space-between;align-items: center}
+
+summary::-webkit-details-marker {display: none}
+
+summary::after {content: "+";color: var(--mint);font-size: 1.2rem}
+
+details[open] summary::after {content: "−"}
+
+.answer {margin-top: 1rem;color: var(--text-muted);font-size: 0.9rem;line-height: 1.7}
+
+.footer {border-top: 1px solid var(--border-subtle);padding: 3rem 2rem;text-align: left}
+
+.footer-inner {max-width: 960px;margin: 0 auto;color: var(--text-muted);font-size: 0.85rem}
+
+@media (max-width: 768px) {
+  .nav-links {display: none}
+  h1 {font-size: 2.2rem}
+  .hero {min-height: 70vh;padding: 2rem 1.5rem}
+  .hero-inner {margin-left: 0}
+  section {padding: 3rem 1.5rem}
+  .client-item {grid-template-columns: 1fr;gap: 0.5rem}
+}
+</style><nav class="nav-bar">
+  <div class="brand-mark">Worldnod</div>
+  <div class="nav-links">
+    <a href="#spec">服务规格</a>
+    <a href="#plans">套餐订阅</a>
+    <a href="#clients">客户端配置</a>
+    <a href="#faq">故障排查</a>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-meta">Manual / Rev. 2024.11</span>
+      <h1>Worldnod 网络中继服务配置手册</h1>
+      <p class="hero-subtitle">本手册详述 Worldnod 节点订阅服务的选用方法、客户端部署流程及常见网络异常的排查路径。请按顺序参阅相关章节。</p>
+      <div class="hero-status">
+        <div class="status-item">
+          <span>3</span>
+          订阅层级
+        </div>
+        <div class="status-item">
+          <span>SSR/V2Ray</span>
+          协议支持
+        </div>
+        <div class="status-item">
+          <span>99.2%</span>
+&gt;可用性基准
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spec">
+    <div class="section-inner">
+      <h2>服务规格说明</h2>
+      <p class="intro-text">Worldnod 运行于自建中继网络，提供基于 Shadowsocks 与 V2Ray 协议的加密传输通道。以下为系统层面的基础参数。</p>
+      
+      <div class="spec-grid">
+        <div class="spec-item">
+          <strong>传输协议</strong>
+          <p>Shadowsocks-R, VMess, VLESS</p>
+        </div>
+        <div class="spec-item">
+          <strong>加密方式</strong>
+          <p>AES-256-GCM, ChaCha20-Poly1305</p>
+        </div>
+        <div class="spec-item">
+          <strong>路由模式</strong>
+          <p>分流模式, 全局模式, 自定义规则</p>
+        </div>
+        <div class="spec-item">
+          <strong>重置周期</strong>
+          <p>自然月计费，每月1日 00:00 (UTC+8)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="section-inner">
+      <h2>订阅套餐</h2>
+      <p class="intro-text">按需求选择对应层级的订阅方案。所有方案均包含相同的协议支持与节点接入权限，差异仅在流量配额、设备并发数及节点优先级。</p>
+      
+      <div class="plans-container">
+        <article class="plan-card">
+          <div class="plan-header">
+            <div>
+              <div class="plan-name">基础版</div>
+            </div>
+            <div>
+              <div class="plan-price">¥15/月</div>
+              <div class="plan-annual">按年付仅需 ¥150/年</div>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>每月 100GB 流量配额</li>
+            <li>支持 3 台设备同时在线</li>
+            <li>基础流媒体网络解锁</li>
+            <li>普通线路节点池接入</li>
+          </ul>
+        </article>
+
+        <article class="plan-card featured">
+          <div class="plan-header">
+            <div>
+              <div class="plan-name">旗舰版</div>
+              <div>推荐配置</div>
+            </div>
+            <div>
+              <div class="plan-price">¥35/月</div>
+              <div class="plan-annual">按年付仅需 ¥350/年</div>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>每月 300GB 流量配额</li>
+            <li>支持 5 台设备同时在线</li>
+            <li>全节点原生流媒体解锁</li>
+            <li>IPLC 专线游戏加速优化</li>
+            <li>7x24 优先工单支持</li>
+          </ul>
+        </article>
+
+        <article class="plan-card">
+          <div class="plan-header">
+            <div>
+              <div class="plan-name">团队版</div>
+            </div>
+            <div>
+              <div class="plan-price">¥85/月</div>
+              <div class="plan-annual">按年付仅需 ¥850/年</div>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>每月 1000GB 流量配额</li>
+            <li>支持 20 台设备同时在线</li>
+            <li>VIP 专属高带宽节点</li>
+            <li>支持企业定制路由</li>
+            <li>专属客户经理服务</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="section-inner">
+      <h2>客户端部署指引</h2>
+      <p class="intro-text">Worldnod 订阅链接兼容主流第三方代理客户端。请根据设备系统选择对应软件，导入订阅地址即可完成配置。</p>
+      
+      <div class="client-list">
+        <div class="client-item">
+          <div class="client-platform">Windows</div>
+          <div class="client-desc">
+            <strong>Clash for Windows / v2rayN</strong>
+            支持图形化界面配置。导入订阅地址后，在配置文件列表中选择 Worldnod 节点组，启用系统代理即可。
+          </div>
+        </div>
+        <div class="client-item">
+          <div class="client-platform">macOS</div>
+          <div class="client-desc">
+            <strong>ClashX Pro / Quantumult X</strong>
+            推荐使用 ClashX Pro 获取完整的分流规则支持。Quantumult X 需手动配置节点订阅与规则订阅。
+          </div>
+        </div>
+        <div class="client-item">
+          <div class="client-platform">Android</div>
+          <div class="client-desc">
+            <strong>Clash for Android / Shadowsocks</strong>
+            支持 SSR 与 V2Ray 协议。在配置页面点击加号，选择从 URL 导入，粘贴订阅地址。
+          </div>
+        </div>
+        <div class="client-item">
+          <div class="client-platform">iOS</div>
+          <div class="client-desc">
+            <strong>Shadowrocket / Quantumult X</strong>
+            需通过非中国区 Apple ID 下载。在 App 内选择添加订阅，输入 Worldnod 提供的节点地址。
+          </div>
+        </div>
+        <div class="client-item">
+          <div class="client-platform">路由器</div>
+          <div class="client-desc">
+            <strong>OpenWrt / Padavan</strong>
+            支持在搭载 OpenWrt 系统的路由器上部署。需安装 Clash 或 V2Ray 插件，配置文件从订阅地址更新。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="section-inner">
+      <h2>常见问题排查</h2>
+      <p class="intro-text">网络连接异常时，请按以下步骤进行排查。若问题持续，请提交工单并附上客户端日志。</p>
+      
+      <div class="faq-group">
+        <details>
+          <summary>订阅链接无法更新或显示为空？</summary>
+          <div class="answer">
+            检查客户端是否能直接访问订阅地址。若本地网络无法解析，可尝试切换至其他网络环境或使用加密 DNS。确认订阅链接未过期，若链接失效请在用户中心重新生成。
+          </div>
+        </details>
+        <details>
+          <summary>连接成功但无法访问部分网站？</summary>
+          <div class="answer">
+            检查客户端的路由规则配置。确认当前处于"规则模式"而非"直连模式"。若特定网站无法加载，尝试清除浏览器 DNS 缓存，或在客户端中手动将该域名加入代理规则。
+          </div>
+        </details>
+        <details>
+          <summary>设备提示流量已耗尽但实际未达上限？</summary>
+          <div class="answer">
+            系统按传输字节统计流量，包含协议开销与重传数据，实际可用流量可能略少于标称值。若差距过大，检查是否有后台应用自动更新消耗流量，或更换节点确认是否单节点统计异常。
+          </div>
+        </details>
+        <details>
+          <summary>多设备同时使用时频繁掉线？</summary>
+          <div class="answer">
+            确认当前套餐的设备并发数限制。基础版限 3 台，旗舰版限 5 台，团队版限 20 台。超出限制时，新设备接入会挤掉旧连接。如需增加并发数，请升级至更高层级套餐。
+          </div>
+        </details>
+        <details>
+          <summary>IPLC 专线节点如何启用？</summary>
+          <div class="answer">
+            IPLC 专线节点仅对旗舰版及以上套餐开放。在客户端节点列表中，名称带有"IPLC"前缀的即为专线节点。选择该节点即自动启用专线传输，无需额外配置。
+          </div>
+        </details>
+        <details>
+          <summary>如何获取故障排查所需的日志文件？</summary>
+          <div class="answer">
+            Windows 端在 Clash for Windows 的 General 页面点击 Logs；macOS 端在 ClashX 菜单栏选择"导出日志"；移动端在 App 设置内查找诊断或日志选项。提交工单时请附上最近 24 小时的日志文本。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>Worldnod 网络中继服务配置手册 · 本页面内容仅供参考，实际服务参数以用户中心显示为准。</p>
+  </div>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>

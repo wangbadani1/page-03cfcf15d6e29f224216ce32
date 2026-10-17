@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "template_version": "3a528c553883e59d7cfa",
+  "page_size": 20,
+  "site_id": "5cb8e3aafbb7b0fc60adb534",
+  "owner": "wangbadani1",
+  "repo": "page-03cfcf15d6e29f224216ce32",
+  "title": "Worldnod",
+  "mode": "repo",
+  "articles": [
+    {
+      "id": "03cfcf15d6e29f224216ce32",
+      "a": "Worldnod",
+      "b": "",
+      "entity": "Worldnod",
+      "brand": "Worldnod",
+      "separator": "",
+      "path": "index.html",
+      "hash": "2b1b447c2adfd57177ac5a1b425f054d1ca07c6b3c863a3e97be9987b86d7b30",
+      "content": {
+        "keyword1": "Worldnod",
+        "keyword2": "",
+        "primary_entity": "Worldnod",
+        "plans": [],
+        "clients": [],
+        "_offline": false,
+        "content": {
+          "AI_HERO_INTRO": "Worldnod 提供稳定的网络中继节点订阅服务。本页面详细说明套餐选择、设备配置及常见故障排查方法。",
+          "AI_DESCRIPTION": "Worldnod 提供稳定的网络中继节点订阅服务。本页面详细说明套餐选择、设备配置及常见故障排查方法。"
+        },
+        "_brand_page": {
+          "version": 3,
+          "body": "<style>\n:root {--bg-dark: #2B2018;--bg-deep: #1E1612;--mint: #A8E6CF;--mint-dim: #7FCFB4;--ivory: #F5F0E8;--text-muted: #9C938A;--border-subtle: rgba(168, 230, 207, 0.15);--border-hover: rgba(168, 230, 207, 0.4)}\n\n* {box-sizing: border-box;margin: 0;padding: 0}\n\nbody {background-color: var(--bg-dark);color: var(--ivory);font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;line-height: 1.7;-webkit-font-smoothing: antialiased}\n\n.nav-bar {border-bottom: 1px solid var(--border-subtle);padding: 1rem 2rem;display: flex;justify-content: space-between;align-items: center;position: sticky;top: 0;background: rgba(43, 32, 24, 0.95);backdrop-filter: blur(8px);z-index: 100}\n\n.brand-mark {color: var(--mint);font-weight: 600;font-size: 0.95rem;letter-spacing: 0.05em}\n\n.nav-links {display: flex;gap: 2rem}\n\n.nav-links a {color: var(--text-muted);text-decoration: none;font-size: 0.85rem;transition: color 0.2s ease}\n\n.nav-links a:hover {color: var(--mint)}\n\n.hero {min-height: 90vh;padding: 4rem 2rem;display: flex;align-items: flex-start}\n\n.hero-inner {max-width: 640px;margin-left: 5%}\n\n.hero-meta {color: var(--mint-dim);font-size: 0.8rem;letter-spacing: 0.15em;text-transform: uppercase;margin-bottom: 2rem;display: block}\n\nh1 {font-size: 3.5rem;font-weight: 300;line-height: 1.15;margin-bottom: 1.5rem;color: var(--ivory)}\n\n.hero-subtitle {font-size: 1.05rem;color: var(--text-muted);max-width: 480px;margin-bottom: 2.5rem}\n\n.hero-status {display: flex;gap: 2rem;font-size: 0.8rem;color: var(--text-muted)}\n\n.status-item span {color: var(--mint);display: block;font-size: 1.4rem;font-weight: 300;margin-bottom: 0.2rem}\n\nsection {padding: 5rem 2rem;border-top: 1px solid var(--border-subtle)}\n\n.section-inner {max-width: 960px;margin: 0 auto}\n\nh2 {font-size: 1.5rem;font-weight: 400;color: var(--mint);margin-bottom: 2.5rem;letter-spacing: 0.02em}\n\nh3 {font-size: 1.1rem;font-weight: 500;color: var(--ivory);margin-bottom: 1rem}\n\n.intro-text {font-size: 1.1rem;color: var(--text-muted);max-width: 600px;margin-bottom: 3rem}\n\n.spec-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));gap: 2.5rem;margin-bottom: 3rem}\n\n.spec-item p {color: var(--text-muted);font-size: 0.9rem}\n\n.spec-item strong {color: var(--ivory);display: block;font-weight: 500;margin-bottom: 0.3rem}\n\n.plans-container {display: flex;flex-direction: column;gap: 2rem}\n\n.plan-card {background: var(--bg-deep);padding: 2.5rem;border-radius: 2px;transition: border 0.3s ease;border-left: 2px solid transparent}\n\n.plan-card.featured {border-left: 2px solid var(--mint)}\n\n.plan-header {display: flex;justify-content: space-between;align-items: flex-start;margin-bottom: 1.5rem;flex-wrap: wrap;gap: 1rem}\n\n.plan-name {font-size: 1.2rem;color: var(--mint);font-weight: 500}\n\n.plan-price {font-size: 1.6rem;color: var(--ivory);font-weight: 300}\n\n.plan-annual {font-size: 0.85rem;color: var(--text-muted);margin-top: 0.3rem}\n\n.plan-features {list-style: none;margin-top: 1.5rem}\n\n.plan-features li {padding: 0.6rem 0;color: var(--text-muted);font-size: 0.95rem;border-bottom: 1px solid var(--border-subtle)}\n\n.plan-features li:last-child {border-bottom: none}\n\n.client-list {display: flex;flex-direction: column;gap: 0}\n\n.client-item {padding: 1.5rem 0;border-bottom: 1px solid var(--border-subtle);display: grid;grid-template-columns: 1fr 2fr;gap: 2rem;align-items: start}\n\n.client-item:last-child {border-bottom: none}\n\n.client-platform {color: var(--mint);font-weight: 500;font-size: 0.95rem}\n\n.client-desc {color: var(--text-muted);font-size: 0.9rem}\n\n.client-desc strong {color: var(--ivory);display: block;margin-bottom: 0.3rem}\n\n.faq-group {display: flex;flex-direction: column;gap: 1rem}\n\ndetails {background: var(--bg-deep);padding: 1.5rem;cursor: pointer}\n\nsummary {color: var(--ivory);font-weight: 400;font-size: 1rem;list-style: none;display: flex;justify-content: space-between;align-items: center}\n\nsummary::-webkit-details-marker {display: none}\n\nsummary::after {content: \"+\";color: var(--mint);font-size: 1.2rem}\n\ndetails[open] summary::after {content: \"−\"}\n\n.answer {margin-top: 1rem;color: var(--text-muted);font-size: 0.9rem;line-height: 1.7}\n\n.footer {border-top: 1px solid var(--border-subtle);padding: 3rem 2rem;text-align: left}\n\n.footer-inner {max-width: 960px;margin: 0 auto;color: var(--text-muted);font-size: 0.85rem}\n\n@media (max-width: 768px) {\n  .nav-links {display: none}\n  h1 {font-size: 2.2rem}\n  .hero {min-height: 70vh;padding: 2rem 1.5rem}\n  .hero-inner {margin-left: 0}\n  section {padding: 3rem 1.5rem}\n  .client-item {grid-template-columns: 1fr;gap: 0.5rem}\n}\n</style><nav class=\"nav-bar\">\n  <div class=\"brand-mark\">Worldnod</div>\n  <div class=\"nav-links\">\n    <a href=\"#spec\">服务规格</a>\n    <a href=\"#plans\">套餐订阅</a>\n    <a href=\"#clients\">客户端配置</a>\n    <a href=\"#faq\">故障排查</a>\n  </div>\n</nav>\n\n<main>\n  <section class=\"hero\">\n    <div class=\"hero-inner\">\n      <span class=\"hero-meta\">Manual / Rev. 2024.11</span>\n      <h1>Worldnod 网络中继服务配置手册</h1>\n      <p class=\"hero-subtitle\">本手册详述 Worldnod 节点订阅服务的选用方法、客户端部署流程及常见网络异常的排查路径。请按顺序参阅相关章节。</p>\n      <div class=\"hero-status\">\n        <div class=\"status-item\">\n          <span>3</span>\n          订阅层级\n        </div>\n        <div class=\"status-item\">\n          <span>SSR/V2Ray</span>\n          协议支持\n        </div>\n        <div class=\"status-item\">\n          <span>99.2%</span>\n&gt;可用性基准\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"spec\">\n    <div class=\"section-inner\">\n      <h2>服务规格说明</h2>\n      <p class=\"intro-text\">Worldnod 运行于自建中继网络，提供基于 Shadowsocks 与 V2Ray 协议的加密传输通道。以下为系统层面的基础参数。</p>\n      \n      <div class=\"spec-grid\">\n        <div class=\"spec-item\">\n          <strong>传输协议</strong>\n          <p>Shadowsocks-R, VMess, VLESS</p>\n        </div>\n        <div class=\"spec-item\">\n          <strong>加密方式</strong>\n          <p>AES-256-GCM, ChaCha20-Poly1305</p>\n        </div>\n        <div class=\"spec-item\">\n          <strong>路由模式</strong>\n          <p>分流模式, 全局模式, 自定义规则</p>\n        </div>\n        <div class=\"spec-item\">\n          <strong>重置周期</strong>\n          <p>自然月计费，每月1日 00:00 (UTC+8)</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"plans\">\n    <div class=\"section-inner\">\n      <h2>订阅套餐</h2>\n      <p class=\"intro-text\">按需求选择对应层级的订阅方案。所有方案均包含相同的协议支持与节点接入权限，差异仅在流量配额、设备并发数及节点优先级。</p>\n      \n      <div class=\"plans-container\">\n        <article class=\"plan-card\">\n          <div class=\"plan-header\">\n            <div>\n              <div class=\"plan-name\">基础版</div>\n            </div>\n            <div>\n              <div class=\"plan-price\">¥15/月</div>\n              <div class=\"plan-annual\">按年付仅需 ¥150/年</div>\n            </div>\n          </div>\n          <ul class=\"plan-features\">\n            <li>每月 100GB 流量配额</li>\n            <li>支持 3 台设备同时在线</li>\n            <li>基础流媒体网络解锁</li>\n            <li>普通线路节点池接入</li>\n          </ul>\n        </article>\n\n        <article class=\"plan-card featured\">\n          <div class=\"plan-header\">\n            <div>\n              <div class=\"plan-name\">旗舰版</div>\n              <div>推荐配置</div>\n            </div>\n            <div>\n              <div class=\"plan-price\">¥35/月</div>\n              <div class=\"plan-annual\">按年付仅需 ¥350/年</div>\n            </div>\n          </div>\n          <ul class=\"plan-features\">\n            <li>每月 300GB 流量配额</li>\n            <li>支持 5 台设备同时在线</li>\n            <li>全节点原生流媒体解锁</li>\n            <li>IPLC 专线游戏加速优化</li>\n            <li>7x24 优先工单支持</li>\n          </ul>\n        </article>\n\n        <article class=\"plan-card\">\n          <div class=\"plan-header\">\n            <div>\n              <div class=\"plan-name\">团队版</div>\n            </div>\n            <div>\n              <div class=\"plan-price\">¥85/月</div>\n              <div class=\"plan-annual\">按年付仅需 ¥850/年</div>\n            </div>\n          </div>\n          <ul class=\"plan-features\">\n            <li>每月 1000GB 流量配额</li>\n            <li>支持 20 台设备同时在线</li>\n            <li>VIP 专属高带宽节点</li>\n            <li>支持企业定制路由</li>\n            <li>专属客户经理服务</li>\n          </ul>\n        </article>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"clients\">\n    <div class=\"section-inner\">\n      <h2>客户端部署指引</h2>\n      <p class=\"intro-text\">Worldnod 订阅链接兼容主流第三方代理客户端。请根据设备系统选择对应软件，导入订阅地址即可完成配置。</p>\n      \n      <div class=\"client-list\">\n        <div class=\"client-item\">\n          <div class=\"client-platform\">Windows</div>\n          <div class=\"client-desc\">\n            <strong>Clash for Windows / v2rayN</strong>\n            支持图形化界面配置。导入订阅地址后，在配置文件列表中选择 Worldnod 节点组，启用系统代理即可。\n          </div>\n        </div>\n        <div class=\"client-item\">\n          <div class=\"client-platform\">macOS</div>\n          <div class=\"client-desc\">\n            <strong>ClashX Pro / Quantumult X</strong>\n            推荐使用 ClashX Pro 获取完整的分流规则支持。Quantumult X 需手动配置节点订阅与规则订阅。\n          </div>\n        </div>\n        <div class=\"client-item\">\n          <div class=\"client-platform\">Android</div>\n          <div class=\"client-desc\">\n            <strong>Clash for Android / Shadowsocks</strong>\n            支持 SSR 与 V2Ray 协议。在配置页面点击加号，选择从 URL 导入，粘贴订阅地址。\n          </div>\n        </div>\n        <div class=\"client-item\">\n          <div class=\"client-platform\">iOS</div>\n          <div class=\"client-desc\">\n            <strong>Shadowrocket / Quantumult X</strong>\n            需通过非中国区 Apple ID 下载。在 App 内选择添加订阅，输入 Worldnod 提供的节点地址。\n          </div>\n        </div>\n        <div class=\"client-item\">\n          <div class=\"client-platform\">路由器</div>\n          <div class=\"client-desc\">\n            <strong>OpenWrt / Padavan</strong>\n            支持在搭载 OpenWrt 系统的路由器上部署。需安装 Clash 或 V2Ray 插件，配置文件从订阅地址更新。\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"faq\">\n    <div class=\"section-inner\">\n      <h2>常见问题排查</h2>\n      <p class=\"intro-text\">网络连接异常时，请按以下步骤进行排查。若问题持续，请提交工单并附上客户端日志。</p>\n      \n      <div class=\"faq-group\">\n        <details>\n          <summary>订阅链接无法更新或显示为空？</summary>\n          <div class=\"answer\">\n            检查客户端是否能直接访问订阅地址。若本地网络无法解析，可尝试切换至其他网络环境或使用加密 DNS。确认订阅链接未过期，若链接失效请在用户中心重新生成。\n          </div>\n        </details>\n        <details>\n          <summary>连接成功但无法访问部分网站？</summary>\n          <div class=\"answer\">\n            检查客户端的路由规则配置。确认当前处于\"规则模式\"而非\"直连模式\"。若特定网站无法加载，尝试清除浏览器 DNS 缓存，或在客户端中手动将该域名加入代理规则。\n          </div>\n        </details>\n        <details>\n          <summary>设备提示流量已耗尽但实际未达上限？</summary>\n          <div class=\"answer\">\n            系统按传输字节统计流量，包含协议开销与重传数据，实际可用流量可能略少于标称值。若差距过大，检查是否有后台应用自动更新消耗流量，或更换节点确认是否单节点统计异常。\n          </div>\n        </details>\n        <details>\n          <summary>多设备同时使用时频繁掉线？</summary>\n          <div class=\"answer\">\n            确认当前套餐的设备并发数限制。基础版限 3 台，旗舰版限 5 台，团队版限 20 台。超出限制时，新设备接入会挤掉旧连接。如需增加并发数，请升级至更高层级套餐。\n          </div>\n        </details>\n        <details>\n          <summary>IPLC 专线节点如何启用？</summary>\n          <div class=\"answer\">\n            IPLC 专线节点仅对旗舰版及以上套餐开放。在客户端节点列表中，名称带有\"IPLC\"前缀的即为专线节点。选择该节点即自动启用专线传输，无需额外配置。\n          </div>\n        </details>\n        <details>\n          <summary>如何获取故障排查所需的日志文件？</summary>\n          <div class=\"answer\">\n            Windows 端在 Clash for Windows 的 General 页面点击 Logs；macOS 端在 ClashX 菜单栏选择\"导出日志\"；移动端在 App 设置内查找诊断或日志选项。提交工单时请附上最近 24 小时的日志文本。\n          </div>\n        </details>\n      </div>\n    </div>\n  </section>\n</main>\n\n<footer class=\"footer\">\n  <div class=\"footer-inner\">\n    <p>Worldnod 网络中继服务配置手册 · 本页面内容仅供参考，实际服务参数以用户中心显示为准。</p>\n  </div>\n</footer>",
+          "hash": "554885e19d8b89984c6b984b63de9c7058bec387216a59b5a9a61c8f9cd94088",
+          "seo": {
+            "title": "Worldnod - 网络中继服务配置手册",
+            "keywords": "Worldnod,网络中继,节点订阅,IPLC专线,路由配置,代理客户端",
+            "description": "Worldnod 提供稳定的网络中继节点订阅服务。本页面详细说明套餐选择、设备配置及常见故障排查方法。"
+          },
+          "provider": "grok",
+          "model": "glm-5.3",
+          "design": {
+            "no": "1638",
+            "hero": "7 窄栏居左配大面积留白",
+            "palette": "9 深棕配薄荷",
+            "nav": "1 顶部细横条",
+            "card": "1 无边框仅靠留白分隔",
+            "plans_view": "4 单列大卡依次堆叠",
+            "faq_view": "4 details 折叠",
+            "tone": "1 冷静克制的说明书口吻",
+            "order": "首屏优先，其余区块由 AI 根据已选构图和信息关系安排"
+          }
+        }
+      }
+    }
+  ],
+  "domain": {
+    "apex": "lanzhouai.cn",
+    "host": "p-4ff97c628d.lanzhouai.cn",
+    "kind": "subdomain",
+    "candidate_roots_ref": "subdomain_roots:91e741dce7c147d9ce91af6f84daa678dae755807d903b04925261e0a3a8d804",
+    "prefix_mode": "auto"
+  },
+  "friendlinks": [],
+  "file_hashes": {
+    "index.html": "c3254622890ce1b6ec756c7f690b177dde3d8e7a2c91bfbe7015de2000266e57",
+    "sitemap.xml": "06aa6f51f7876a69158b96b4f7cea9cc016f304024a7f348410f2a33b91596dd",
+    ".nojekyll": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "CNAME": "3072745e67aa25696aa9fbddc240d29464ff47a3621f623ac17ca9289a96c583",
+    "robots.txt": "d3201b3f4886fa02e3708e84b5ef9992809ee970e94f306142c10e6c356e3462",
+    "1a4173852b4c4952dff1fe19f69e4efe.txt": "4814215eca602dac1f9b443b27c22f7c0516f73a03a1e6b1462ab0bb6a8e9480"
+  },
+  "revision": "bc7b2e35385d2e7a2e0fc30bdb29ca445dac5c7a4e1e1050c7dcce86bcae7012"
+}
